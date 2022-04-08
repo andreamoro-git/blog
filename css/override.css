@@ -13,6 +13,10 @@ hr {
   opacity: 0.5;
 }
 
+.post_mydate {
+  font-size: 10px;
+}
+
 .post_navi .post_navi-item {
   padding: 0 2.2em;
   width: 50%;
