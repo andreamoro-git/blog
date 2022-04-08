@@ -1,3 +1,9 @@
+---
+layout: post
+categories: tips
+---
+
+
 # LaTeX commands I keep forgetting
 
 ... and that I use a lot!
