@@ -22,6 +22,12 @@ layout: default
     {% include navlinks.html %}
   </div>
   
+  <div>[
+    {% for tag in page.tags %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+    {% endfor %}
+  ]</dic>
   <div class="share-links">
     {% include sharelinks.html %}
   </div>
