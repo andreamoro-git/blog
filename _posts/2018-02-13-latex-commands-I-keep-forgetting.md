@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: tips
+tags: tips
 ---
 
 
