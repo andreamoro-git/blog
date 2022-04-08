@@ -17,6 +17,10 @@ hr {
   font-size: 10px;
 }
 
+.post_link {
+  display: inline
+}
+
 .post_navi .post_navi-item {
   padding: 0 2.2em;
   width: 50%;
