@@ -17,8 +17,8 @@ hr {
   font-size: 10px;
 }
 
-.post_link {
-  display: inline !important;
+.post-link {
+  display: inline;
 }
 
 .post_navi .post_navi-item {
