@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+Some tips and tricks, stuff I found useful
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+my web site: https://andreamoro.net
