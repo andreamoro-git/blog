@@ -1,3 +1,7 @@
+# LaTeX commands I keep forgetting
+
+... and that I use a lot!
+
 ## Simplify page and margin size
 
       \usepackage[margin=1.25in]{geometry}
