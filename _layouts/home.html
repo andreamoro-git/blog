@@ -25,12 +25,14 @@ layout: default
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
       <li>
-        [
-        {% for tag in post.tags %}
-          {% capture tag_name %}{{ tag }}{% endcapture %}
-          {{ tag_name }} 
-        {% endfor %}
-        ]
+          <span class="post-mydate post-meta">
+            [
+              {% for tag in post.tags %}
+                {% capture tag_name %}{{ tag }}{% endcapture %}
+                {{ tag_name }} 
+              {% endfor %}
+            ] 
+          </span>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
