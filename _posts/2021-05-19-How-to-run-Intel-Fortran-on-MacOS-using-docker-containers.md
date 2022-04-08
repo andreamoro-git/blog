@@ -3,7 +3,7 @@ layout: post
 tags: tips
 ---
 
-# How to run intel fortran on MacOS using docker containers
+# How to run Intel Fortran on MacOS using Docker containers
 
 Note: these commands are to be entered in a terminal shell, if you don't know what a terminal is and how to access it on MacOS, you need to figure that out first
 
