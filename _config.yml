@@ -16,9 +16,14 @@ website: "https://andreamoro.net"
 #youtube_username: username
 #googleplus_username: +username
 
+## my mods
+
+baseurl: /blog
+
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
+
 theme: "minima"
 
 rss: rss
