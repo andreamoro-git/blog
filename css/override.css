@@ -18,7 +18,7 @@ hr {
 }
 
 .post_link {
-  display: inline
+  display: inline !important;
 }
 
 .post_navi .post_navi-item {
