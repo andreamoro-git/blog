@@ -24,6 +24,8 @@ website: "https://andreamoro.net"
 
 theme: "minima"
 
+google_analytics: UA-1953869-2
+
 rss: rss
 
 kramdown:
