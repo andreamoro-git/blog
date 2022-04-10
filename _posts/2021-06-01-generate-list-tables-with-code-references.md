@@ -1,8 +1,6 @@
 ---
-layout: posts
 tags: tips
 ---
-
 # How to generate a list of tables indicating the code line numbers where they are generated
 
 The [README template for Replication packages](https://social-science-data-editors.github.io/template_README/) 
