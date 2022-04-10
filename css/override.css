@@ -65,9 +65,10 @@ pre {
 	vertical-align: middle;
 }
 
-.italiano {
-	color: darkgoldenrod !important;
-}
 a, a:visited, .tips {
   color : #5a8241 !important;
+}
+
+.italiano {
+	color: darkgoldenrod !important;
 }
