@@ -26,7 +26,7 @@ layout: default
   <div>[
     {% for tag in page.tags %}
       {% capture tag_name %}{{ tag }}{% endcapture %}
-      <a href="/blog/tag/{{ tag_name }} class='tag_name' "><nobr>{{ tag_name }}</nobr>&nbsp;</a>
+      <a href="/blog/tag/{{ tag_name }} class='{{ tag_name }}' "><nobr>{{ tag_name }}</nobr>&nbsp;</a>
     {% endfor %}
   ]</dic>
   <div class="share-links">
