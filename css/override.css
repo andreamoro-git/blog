@@ -60,6 +60,9 @@ pre {
   opacity: 0.3;
 }
 
+.post-content{
+	margin-bottom: 10px;
+}
 .share-links {
 	float: right;
 	vertical-align: middle;
