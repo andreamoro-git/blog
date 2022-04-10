@@ -68,6 +68,6 @@ pre {
 .italiano {
 	color: darkgoldenrod !important;
 }
-.tips {
+a, a:visited, .tips {
   color : #5a8241 !important;
 }
