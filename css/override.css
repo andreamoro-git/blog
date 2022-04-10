@@ -65,6 +65,10 @@ pre {
 	vertical-align: middle;
 }
 
+a {
+	color: #693598;
+}
+
 .tips {
   color : #5a8241 !important;
 }
