@@ -43,6 +43,8 @@ Include this code in the preamble of your latex file to generate a nice list (yo
 Take your output from step 1 [LaTeXfilename].foo. The file  It will look like this. 
 
 !({{ "/assets/images/imgnames.png"  | relative_url }})
+![useful image]({{ site.url }}/assets/images/imgnames.png)
+![useful image]({{ site.url }}/blog/assets/images/imgnames.png)
 
 The goal is to get a clean list of filenames, therefore remove the first 2columns (latex file line # and figure #). 
 You also may need to do some editing to ensure filenames can be found in your code. I had to remove the directory since I 
