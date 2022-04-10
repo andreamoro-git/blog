@@ -1,7 +1,3 @@
-a, a:visited, .tips {
-  color : #5a8241;
-}
-
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -66,4 +62,7 @@ pre {
 
 .italiano {
 	color: darkgoldenrod !important;
+}
+.tips {
+  color : #5a8241 !important;
 }
