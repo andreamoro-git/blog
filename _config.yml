@@ -50,4 +50,4 @@ defaults:
 url: https://andreamoro.net
 baseurl: "/blog"
 production_url : https://andreamoro.net/blog
-BASE_PATH : http://andreamoro.neZ/blog
+BASE_PATH : https://andreamoro.net/blog
