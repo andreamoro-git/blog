@@ -42,7 +42,7 @@ Include this code in the preamble of your latex file to generate a nice list (yo
 ### 2. Prepare the file for parsing
 Take your output from step 1 [LaTeXfilename].foo. The file  It will look like this. 
 
-!(blog/_posts/images/imgnames.png)
+!(/posts/images/imgnames.png)
 
 The goal is to get a clean list of filenames, therefore remove the first 2columns (latex file line # and figure #). 
 You also may need to do some editing to ensure filenames can be found in your code. I had to remove the directory since I 
@@ -57,7 +57,7 @@ while read line; do grep -n "$line" *; done < [LaTeXfilename].foo
 ```
 You'll get something like this, i.e. filename : line # : matched string, which you can then easily combine with the figure numbers generate above and turn into a table for your README. Double-check since it produces no output if it doesn't find any match. That's it hope it helps.
 
-!(blog/_posts/images/codelogs.png)
+!(/blog/_posts/images/codelogs.png)
 
 I suppose if you have a better process this may be automagically done but I don't. 
 I change figure names all the time! Feel free to send me your own tips
