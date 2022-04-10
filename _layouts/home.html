@@ -27,7 +27,7 @@ layout: default
       {% assign alltags = "" %}
         {% for tag in post.tags %}
            {% capture tag_name %}{{ tag }}{% endcapture %}
-           {{ alltags | append: tag_name }}
+           {% assign alltags = {{ alltags | append: tag_name }} %}
         {% endfor %}
 
       
