@@ -1,7 +1,7 @@
 ---
 tags: tips
 ---
-# How to generate a list of tables indicating the code line numbers where they are generated
+# How to generate a list of tables for replication packages
 
 The [README template for Replication packages](https://social-science-data-editors.github.io/template_README/) 
 recommends including a list of tables and programs identifying the tables and figures as they appear in the manuscript, by number,
