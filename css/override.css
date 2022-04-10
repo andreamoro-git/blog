@@ -60,6 +60,11 @@ pre {
   opacity: 0.3;
 }
 
+.share-links {
+	float: right;
+	vertical-align: middle;
+}
+
 .italiano {
 	color: darkgoldenrod !important;
 }
