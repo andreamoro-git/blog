@@ -1,6 +1,5 @@
 ---
 tags: tips
-type: posts
 ---
 # How to generate a list of tables indicating the code line numbers where they are generated
 
