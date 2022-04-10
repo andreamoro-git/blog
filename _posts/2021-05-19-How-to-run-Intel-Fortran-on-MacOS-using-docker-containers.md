@@ -4,7 +4,7 @@ tags: tips
 
 # How to run Intel Fortran on MacOS using Docker containers
 
-I could not find a way to run Fortran on MacOS until I discovered Docker's magic. You may find this useful. 
+I could not find a way to run intel Fortran on MacOS until I discovered Docker's magic. Other fortran compilers? Meh... You may find this useful. 
 
 Note: these commands are to be entered in a terminal shell, if you don't know what a terminal is and how to access it on MacOS, you need to figure that out first
 
@@ -48,5 +48,7 @@ Then, exit the container
 7- Other useful commands i keep forgetting
 
       docker container prune
+     
+8- Need a debugger? It's there, only hidden, it took me navigating the whole tree until I found out it's ```gdb-oneapi```
 
 Note: I recommend starting containers afresh and pruning them frequently. In my experience, things start to act funny after a while. 
