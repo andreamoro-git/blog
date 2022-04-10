@@ -66,7 +66,10 @@ pre {
 }
 
 a {
-	color: #693598;
+    color: #693598;
+}
+a:visited {
+    #8961ae;
 }
 
 .tips {
