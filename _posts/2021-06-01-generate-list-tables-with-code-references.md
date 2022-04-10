@@ -24,15 +24,15 @@ Include this code in the preamble of your latex file to generate a nice list (yo
 
 \usepackage{xpatch}
 \makeatletter
-\xapptocmd{\label}{%
-  \@ifundefined{@captype}{}{%
+\xapptocmd{\label}{ %
+  \@ifundefined{@captype}{}{ %
   \ifx\@captype\figurestring%
-    \immediate\write\myfile{#1}%
+    \immediate\write\myfile{#1} %
   \fi%
   }%
 }{}{}
-\xapptocmd{\Gin@ii}{%
-  \@ifundefined{@captype}{}{%
+\xapptocmd{\Gin@ii}{ %
+  \@ifundefined{@captype}{}{ %
   \ifx\@captype\figurestring%
     \immediate\write\myfile{l.\the\inputlineno\space\thefigure\space #2}%
   \fi%
