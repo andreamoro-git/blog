@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 tags: tips
 ---
 
@@ -16,6 +16,7 @@ adaptable for tables
 
 Include this code in the preamble of your latex file to generate a nice list (you need to adapt it for the list of tables but it should be intuitive)
 (hat tip: https://stackoverflow.com/questions/66551105/lazy-quantifier-for-an-exact-word-in-large-text-with-newlines/66555601#66555601)
+
 ```
 \newwrite\myfile
 \immediate\openout\myfile=\jobname.foo
@@ -38,7 +39,6 @@ Include this code in the preamble of your latex file to generate a nice list (yo
   }%
 }{}{}
 \makeatother
-
 ```
 
 ### 2. Prepare the file for parsing
