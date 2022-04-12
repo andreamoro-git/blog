@@ -1,3 +1,11 @@
+body {
+  font-family: 'Raleway', serif;
+  }
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Arvo', sans-serif;
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
