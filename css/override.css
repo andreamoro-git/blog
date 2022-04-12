@@ -2,7 +2,7 @@ body {
   font-family: 'Raleway', serif;
   }
 
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5,.site-title,.site-nav {
   font-family: 'Arvo', sans-serif;
 }
 
