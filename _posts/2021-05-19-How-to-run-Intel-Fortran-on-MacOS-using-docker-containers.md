@@ -5,7 +5,7 @@ comments: true
 
 # How to run Intel Fortran on MacOS using Docker containers
 
-I could not find a way to run intel Fortran on MacOS until I discovered Docker's magic. Other fortran compilers? Meh... You may find this useful. 
+I could not find a way to run intel Fortran on MacOS until I discovered Docker's magic. Other fortran compilers? Meh... 
 
 Note: these commands are to be entered in a terminal shell, if you don't know what a terminal is and how to access it on MacOS, you need to figure that out first
 
