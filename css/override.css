@@ -6,6 +6,10 @@ h1,h2,h3,h4,h5,.site-title,.site-nav {
   font-family: 'Arvo', sans-serif;
 }
 
+.site-title { 
+	font-size: 28px;
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
