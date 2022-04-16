@@ -1,11 +1,11 @@
 title: "andrea moro's tips and rants"
 author: "andrea moro"
-description: "blog based on Chad Baldwin's single-blog-bootstrap 
+description: "based on single-blog-bootstrap 
   --- hope this helps" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "andrea@andreamoro.net"
+email: "andrea at andreamoro dot net"
 twitter_username: "andreamoro"
 github_username: "andreamoro_git"
 website: "https://andreamoro.net"
