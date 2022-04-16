@@ -32,11 +32,11 @@ layout: default
         {% capture tag_name %}{{ tag }}{% endcapture %}
         <a href="/blog/tag/{{ tag_name }}" class="{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
       {% endfor %}
+
+      <div class="share-links">
+        {% include sharelinks.html %}
+      </div> 
     ]</div>
-  
-     <div class="share-links">
-      {% include sharelinks.html %}
-    </div> 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
