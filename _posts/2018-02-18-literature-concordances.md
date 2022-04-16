@@ -1,11 +1,10 @@
 ---
 tags: misc
 comments: false
-foo: bar
 ---
 ## Concordances in literature
 
-(something I do in my spare time when I need to scratch an itch) {{ page.foo }}
+(something I do in my spare time when I need to scratch an itch) 
 
 * [Ulysses](https://joyceconcordance.andreamoro.net)
 * [Divina commedia](https://danteconcordance.andreamoro.net)
