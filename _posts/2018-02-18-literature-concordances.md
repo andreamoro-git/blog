@@ -1,6 +1,6 @@
 ---
 tags: misc
-comments: true
+comments: false
 ---
 ## Concordances in literature
 
