@@ -1,6 +1,6 @@
 ---
 tags: tips
-comments: true
+comments: false
 ---
 
 # How to run Intel Fortran on MacOS using Docker containers
