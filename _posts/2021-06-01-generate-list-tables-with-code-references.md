@@ -1,6 +1,6 @@
 ---
 tags: tips
-comments: true
+comments: false
 ---
 # How to generate a list of tables for replication packages
 
