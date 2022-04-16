@@ -1,7 +1,6 @@
 ---
 tags: misc
 comments: false
-tryvar: foobar
 ---
 ## Concordances in literature
 
