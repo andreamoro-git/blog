@@ -26,8 +26,11 @@ layout: default
       {%- for post in posts -%}
       {% assign alltags = "" %}
         {% for tag in post.tags %}
-           {% capture tag_name %}{{ tag }}{% endcapture %}
-           {% assign alltags = alltags | append: tag_name  %}
+          {%- if tag == 'italiano' -%}
+            {% assign tag = '&#127470;&#127481;' %}
+          {%- endif -%}
+          {% capture tag_name %}{{ tag }}{% endcapture %}
+          {% assign alltags = alltags | append: tag_name  %}
         {% endfor %}
 
       
