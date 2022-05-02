@@ -26,19 +26,15 @@ layout: default
       {%- for post in posts -%}
       {% assign alltags = "" %}
         {% for tag in post.tags %}
-          {%- if tag == 'italiano' -%}
-            {% assign tag = '&#127470;&#127481;' %}
-          {%- endif -%}
           {% capture tag_name %}{{ tag }}{% endcapture %}
           {% assign alltags = alltags | append: tag_name  %}
         {% endfor %}
-
       
       <li>
           <span class="post-mydate post-meta">
             [ {{ alltags }} ] 
           </span>
-          <a class="post-link {{ alltags }} " href="{{ post.url | relative_url }}">
+          <a class="post-link {{ alltags | replace 'italiano' '&#127470;&#127481;' }} " href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
            <span class="post-mydate post-meta">{{ post.date | date: date_format }}</span>
