@@ -33,6 +33,10 @@ pre {
 
 .post-mydate {
   font-size: 10px;
+	font-size: 10px;
+	display: inline-block;
+	min-width: 3.5em;
+	text-align: center;
 }
 
 .post-link {
