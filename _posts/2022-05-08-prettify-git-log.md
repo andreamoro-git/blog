@@ -16,7 +16,7 @@ The command also colorizes the columns, outputs the last 20 commits by default b
 The command to store it globally is the following:
 
 ```
-git config --global alias.logs '%C(yellow)%h%C(cyan) %ai%C(auto)%d %Creset%s'
+git config --global alias.logs "log -20 --pretty='%C(yellow)%h%C(cyan) %ai%C(auto)%d %Creset%s'"
 ```
 
 type ```git logs``` and enjoy!
