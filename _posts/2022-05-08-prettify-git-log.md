@@ -12,7 +12,7 @@ e470a9e 2021-08-19 15:57:26 -0500 added data
 c6b5de1 2021-08-19 04:29:36 -0500 Initial commit
 ```
 
-The command also colorizes the columns, outputs the last 20 commits by default but accepts an optional -n argument at the end
+The alias also colorizes the columns, outputs the last 20 commits by default but accepts an optional -n argument at the end.
 The command to store it globally is the following:
 
 ```
