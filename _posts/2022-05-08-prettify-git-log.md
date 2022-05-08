@@ -2,9 +2,9 @@
 tags: tips
 ---
 # How to prettify and get a more efficient output from ```git log```
-``
-I was not satisfied with the output of git log: too much information or too little. I created a simple alias that outputs 
-one line per commit with, in order: hastag, day and time of commit, (branch, tag info), and commit message. 
+
+I am not satisfied with the output of git log and any of its optional arguments: too much information or too little, and hard to read. I created a simple alias that outputs 
+one line per commit with, in order: hastag, day and time of commit, (branch, tag info), and commit message. This is all one needs 99% of the times. 
 
 ```
 d09e1b8 2021-08-19 17:59:20 -0500 added code
