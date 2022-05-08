@@ -12,7 +12,7 @@ one line per commit with, in order: hastag, day and time of commit, (branch, tag
 c6b5de1 2021-08-19 04:29:36 -0500 Initial commit
 ```
 
-The command outputs the last 20 commits by default but accepts an optional -n argument at the end
+The command also colorizes the columns, outputs the last 20 commits by default but accepts an optional -n argument at the end
 The command to store it globally is the following:
 
 ```
