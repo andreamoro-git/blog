@@ -7,8 +7,8 @@ I was not satisfied with the output of git log: too much information or too litt
 one line per commit with, in order: hastag, day and time of commit, (branch, tag info), and commit message. 
 
 ```
-d09e1b8 2021-08-19 17:59:20 +0200 added code
-e470a9e 2021-08-19 15:57:26 +0200 added data
+d09e1b8 2021-08-19 17:59:20 -0500 added code
+e470a9e 2021-08-19 15:57:26 -0500 added data
 c6b5de1 2021-08-19 04:29:36 -0500 Initial commit
 ```
 
