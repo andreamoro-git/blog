@@ -2,14 +2,12 @@
 tags: tips
 comments: false
 ---
-# How to generate a list of tables for replication packages
+# How to generate a list of figures for replication packages
 
 The [README template for Replication packages](https://social-science-data-editors.github.io/template_README/) 
-recommends including a list of tables and programs identifying the tables and figures as they appear in the manuscript, by number,
-and the line of code that generated them. 
+recommends including a list of figures (and tables) as they appear in the manuscript, by number, identifying the line of code that generated them. 
 
-The following instructions should help generate this table starting from a LaTeX file. The code works for figure floats but should be easily 
-adaptable for tables 
+The following instructions should help generate this table starting from a LaTeX file. 
 
 ### 1. Get figure numbers and figure filenames form your LaTeX. 
 
