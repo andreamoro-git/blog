@@ -12,6 +12,8 @@
       {% include collecttags.html %}
   {% endif %}
 
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
+
   <!-- fonts -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arvo">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -22,7 +24,6 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/override.css" />
   
   <script type="text/javascript" src="{{ site.baseurl }}/js/highlightjs/highlight.min.js"></script>
-
   <script type="text/javascript" src="{{ site.baseurl }}/js/highlightjs/languages/plaintext.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/js/highlightjs/languages/powershell.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/js/highlightjs/languages/tsql.min.js"></script>
