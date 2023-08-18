@@ -24,7 +24,7 @@ ENV PATH="$PATH:/root/.TinyTeX/bin/x86_64-linux"
 ```
 
 From here, run bash in your container, compile your latex file, and check what packages are missing. For example, you may get a message such as ```! LaTeX Error: File `type1cm.sty' not found.```
-In this case, run ```tlmgr search --global --file "type1cm.sty"``` which will output something like this:
+In this case, from inside a container run ```tlmgr search --global --file "type1cm.sty"``` which will output something like this:
 ```
 tlmgr: package repository https://ctan.mirror.garr.it/mirrors/ctan/systems/texlive/tlnet (not verified: gpg unavailable)
 type1cm:
