@@ -37,6 +37,6 @@ Repeat this process until you have all the packages you need. In my case also ne
 RUN apt-get install dvipng -y
 ```
 
-For some reason, in my image (based on python:3.9-slim) the dvipng installation needed to be done *after* the TinyTeX installation, otherwise some misterious version conflict would appear.
+For some reason, in my image (based on python:3.9-slim) the dvipng installation needed to be done *after* the TinyTeX installation, otherwise some misterious version conflict would appear which I didn't really have time to investigate further.
 
 My full Dockerfile is [here](https://github.com/andreamoro-git/JurySelection-Replication_Package/blob/main/Environment/Dockerfile)
