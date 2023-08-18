@@ -4,6 +4,7 @@ tags: tips
 # How to include a LaTeX distribution inside a docker image
 
 I recently had to prepare a replication package for a paper I wrote. The replication package included a Python script that generated some figures using matplotlib with some LaTeX formatting. I wanted to use docker to ensure that the script would run on any machine without the need to install any dependencies (see [this recommendation from AEA's data editor](https://aeadataeditor.github.io/posts/2021-11-16-docker)). 
+
 Instructions on how to include LaTeX inside a docker image are scarce. One of the challenges of running LaTeX inside a Docker container is that standard LaTeX distributions are large, and there have been reports of Docker not working well with them. However, a solution is to use a minimal LaTeX distribution like [TinyTeX](https://yihui.org/tinytex/). To add TinyTeX to your Dockerfile, simply include the following lines:
 
 ```
