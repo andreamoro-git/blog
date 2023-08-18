@@ -39,4 +39,4 @@ RUN apt-get install dvipng -y
 
 For some reason, in my image (based on python:3.9-slim) the dvipng installation needed to be done *after* the TinyTeX installation, otherwise some misterious version conflict would appear.
 
-My full Dockerfile can be found [here](https://github.com/andreamoro-git/JurySelection-Replication_Package/blob/main/Environment/Dockerfile)
+My full Dockerfile is [here](https://github.com/andreamoro-git/JurySelection-Replication_Package/blob/main/Environment/Dockerfile)
