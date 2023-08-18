@@ -13,6 +13,7 @@ To do so you need to add the following lines to your Dockerfile:
 ```
 # install perl and wget if you don't have them already
 # my debian distribution had perl but was missing some libraries. This fixed it.  
+RUN apt-get update
 RUN apt-get install perl wget -y  
 
 # fetch TinyTeX installer and run it
