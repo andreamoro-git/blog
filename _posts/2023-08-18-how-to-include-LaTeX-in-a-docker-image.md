@@ -3,8 +3,10 @@ tags: tips
 ---
 # How to include a LaTeX distribution inside a docker image
 
-Instructions on how to include LaTeX in a docker image are scarce. One of the issues is that standard 
-LaTeX distributions are huge, and the docker image will be huge as well.
+I needed to include LaTeX in a docker image to compile a latex file from within a python script, but
+instructions on how to include LaTeX in a docker image are scarce. One of the issues with running LaTeX 
+inside a docker container is that standard 
+LaTeX distributions are huge, and I have read some reports of docker not working with them.
 The solution is to use a minimal LaTeX distribution, such as [TinyTeX](https://yihui.org/tinytex/). 
 To do so you need to add the following lines to your Dockerfile:
 
@@ -37,6 +39,6 @@ Repeat this process until you have all the packages you need. In my case also ne
 RUN apt-get install dvipng -y
 ```
 
-For some reason, in my image (based on python:3.9-slim) the dvipng installation needed to be done (*after* the TinyTeX installation), otherwise some misterious version conflict would appear.
+For some reason, in my image (based on python:3.9-slim) the dvipng installation needed to be done *after* the TinyTeX installation, otherwise some misterious version conflict would appear.
 
 My full Dockerfile can be found [here](https://github.com/andreamoro-git/JurySelection-Replication_Package/blob/main/Environment/Dockerfile)
