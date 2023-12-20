@@ -7,7 +7,7 @@ title: archive
   <h3>{{ tag[0] }}</h3>
   <ul>
     {% for post in tag[1] %}
-      <li>{{ post.date | date: "%B %Y" }} - <a href="blog/{{ post.url }}" class= "{{ tag[0] }}" > {{ post.title }}</a></li>
+      <li>{{ post.date | date: "%B %Y" }} - <a href="aaa/{{ post.url }}" class= "{{ tag[0] }}" > {{ post.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
