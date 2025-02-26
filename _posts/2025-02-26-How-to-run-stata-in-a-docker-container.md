@@ -33,5 +33,5 @@ docker run --init -it --rm \
 			   stataimg
 ```
 
-to open up an interactive stata interface. You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` which should be into the directory you mount with the -v flag above. 
+to open up an interactive stata interface. You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. 
 
