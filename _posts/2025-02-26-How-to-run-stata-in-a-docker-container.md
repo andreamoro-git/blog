@@ -1,9 +1,9 @@
 ---
 tags: tips
 ---
-# How to run Stata inside a docker container
+# How to run Stata inside a Docker container
 
-Lars Vilhuber, the AEA data editor, has made available a set of Docker images for stata at [this github repository](https://github.com/AEADataEditor/docker-stata?tab=readme-ov-file). I decided to give it a try with the purpose of streamlining the grading of my PhD class computer homework. As I should have expected, it took me the good part of a day to make it work. 
+Lars Vilhuber, the AEA data editor, has made available a set of Docker images for Stata at [this github repository](https://github.com/AEADataEditor/docker-stata?tab=readme-ov-file). I decided to give it a try with the purpose of streamlining the grading of my PhD class computer homework. As I should have expected, it took me the good part of a day to make it work. 
 
 Lars's instructions are more comprehensive (and didn't work for me, I'm sure it's my fault),  I am posting a quick solution reference that works for me, with a plan, later on, to fix it later. It goes like this:
 
@@ -24,7 +24,7 @@ Lars's instructions are more comprehensive (and didn't work for me, I'm sure it'
 	docker build -t stataimg .
 	``` 
 
-3. Run the following 
+3. Run the following to open up an interactive stata interface. 
 
 	``` 
 	docker run --init -it --rm \
@@ -33,5 +33,5 @@ Lars's instructions are more comprehensive (and didn't work for me, I'm sure it'
 				stataimg
 	```
 
-to open up an interactive stata interface. You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. 
+You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. 
 
