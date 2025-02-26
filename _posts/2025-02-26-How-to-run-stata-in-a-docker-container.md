@@ -26,7 +26,8 @@ docker build -t stataimg .
 
 3. Run the following 
 
-``` docker run --init -it --rm \
+``` 
+docker run --init -it --rm \
                --mount "type=bind,source=${PWD}/stata.lic,target=/usr/local/stata/stata.lic" \
                -v "${PWD}/my_project_do_files":/project \
 			   stataimg
