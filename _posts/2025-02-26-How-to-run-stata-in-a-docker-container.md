@@ -13,7 +13,7 @@ Lars's instructions are more comprehensive, but I am posting a quick solution re
 ```
 FROM dataeditors/stata18-se-i:2024-12-18
 
-# create a working directory (not necessary but keeps things tidy)
+\# create a working directory (not necessary but keeps things tidy)
 WORKDIR /project/
 ```
 
