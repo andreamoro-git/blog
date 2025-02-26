@@ -11,27 +11,27 @@ Lars's instructions are more comprehensive (and didn't work for me, I'm sure it'
 2. The following assumes your do files are in a subdirectory of the current working directory called my_project_do_files
 2. Use this Dockerfile. The part stata18-se-i:2024-12-18 can and should be changed according to your license and preferences. The full list of images:tabs is available [here](https://hub.docker.com/u/dataeditors)
 
-```
-FROM dataeditors/stata18-se-i:2024-12-18
+	```
+	FROM dataeditors/stata18-se-i:2024-12-18
 
-# create a working directory (not necessary but keeps things tidy)
-WORKDIR /project/
-```
+	# create a working directory (not necessary but keeps things tidy)
+	WORKDIR /project/
+	```
 
 2. Build the image (substitute . for the directory where you placed the Dockerfile)
 
-```
-docker build -t stataimg .
-``` 
+	```
+	docker build -t stataimg .
+	``` 
 
 3. Run the following 
 
-``` 
-docker run --init -it --rm \
-               --mount "type=bind,source=${PWD}/stata.lic,target=/usr/local/stata/stata.lic" \
-               -v "${PWD}/my_project_do_files":/project \
-			   stataimg
-```
+	``` 
+	docker run --init -it --rm \
+				--mount "type=bind,source=${PWD}/stata.lic,target=/usr/local/stata/stata.lic" \
+				-v "${PWD}/my_project_do_files":/project \
+				stataimg
+	```
 
 to open up an interactive stata interface. You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. 
 
