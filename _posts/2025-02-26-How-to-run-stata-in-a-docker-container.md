@@ -31,6 +31,5 @@ Lars's instructions are more comprehensive (and didn't work for me, I'm sure it'
 				-v "${PWD}/my_project_do_files":/project \
 				stataimg
 	```
-
 You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. 
 
