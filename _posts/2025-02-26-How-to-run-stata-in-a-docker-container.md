@@ -33,6 +33,6 @@ It goes like this:
 				-v "${PWD}/my_project_do_files":/project \
 				stataimg
 	```
-You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. 
+You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. This is what you should do when preparing a replication package, to minimize replicator's typing. 
 
 That's all. Let me know if it does not work for you. 
