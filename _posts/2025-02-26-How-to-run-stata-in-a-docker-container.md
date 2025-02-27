@@ -5,7 +5,7 @@ tags: tips
 
 Lars Vilhuber, the AEA data editor, has made available a set of Docker images for Stata at [this github repository](https://github.com/AEADataEditor/docker-stata?tab=readme-ov-file). I decided to give it a try with the purpose of streamlining the grading of my PhD class computer homework. As I should have expected, it took me the good part of a day to make it work. 
 
-Lars's instructions are more comprehensive (and didn't work for me, I'm sure it's my fault),  I am posting a quick solution reference that works for me, with a plan to fix it later. The procedure was tested on a IMac with OS Sequoia 15.3. I assume you have installed Docker, and you are somewhat familiar with opening a terminal in your computer. 
+Lars's instructions are more comprehensive (and didn't work for me, I'm sure it's my fault),  I am posting a quick solution reference that worked for me on my IMac with OS Sequoia 15.3. I assume you have Docker installed, and you are somewhat familiar with opening a terminal in your computer and typing into it, navigating directories, etc... (but not a lot more really). 
 
 It goes like this:
 
