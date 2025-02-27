@@ -35,3 +35,4 @@ It goes like this:
 	```
 You can also batch-run a do file by adding after ```stataimg``` ```-b dofile.do``` where dofile.do is inside the directory you mount with the -v flag above. 
 
+That's all. Let me know if it does not work for you. 
