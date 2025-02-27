@@ -10,7 +10,7 @@ Lars's instructions are more comprehensive (and didn't work for me, I'm sure it'
 It goes like this:
 
 1. Figure out where your Stata license file is. Just google if you have no idea. Copy it into your working directory.
-2. Create this Dockerfile (wioth name: Dockerfile, no extension). The part ```stata18-se-i:2024-12-18``` can and should be changed according to your license and preferences. The full list of images:tags is available [at the dataeditors docker hub](https://hub.docker.com/u/dataeditors)
+2. Create this Dockerfile (with filename: Dockerfile, no extension). The part ```stata18-se-i:2024-12-18``` can and should be changed according to your license and preferences. The full list of images:tags is available [at the dataeditors docker hub](https://hub.docker.com/u/dataeditors)
 
 	```
 	FROM dataeditors/stata18-se-i:2024-12-18
