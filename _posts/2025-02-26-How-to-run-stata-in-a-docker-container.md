@@ -25,7 +25,7 @@ It goes like this:
 	docker build -t stataimg .
 	``` 
 
-3. Run the following to open up an interactive stata interface. The -v flag is mounting a local directory into the container's tree ($PWD stands for present-working-directory, you have to indicate the entire path from the root if you don't want to use the variable). The parth after the colon is inside the container and should be consistent with what indicated in the Dockerfile. My solution assumes your do files are in a subdirectory of the present working directory called my_project_do_files. That's where output/dta files/etc... will be saved by your stata scripts. If you want a more complex directory structure, make sure its root is mounted to /project, which is defined as the working directory inside the Dockerfile
+3. Run the following to open up an interactive stata interface. The -v flag is mounting a local directory into the container's tree ($PWD stands for present-working-directory, you have to indicate the entire path from the root if you don't want to use the variable). The directory after the colon is where your local path will be mounted into the container - it should be consistent with the WORKDIR indicated in the Dockerfile. My solution assumes your do files are in a subdirectory of the present working directory called my_project_do_files. That's where output/dta files/etc... will be saved by your stata scripts. If you want a more complex directory structure, make sure its root is mounted to /project, which is defined as the working directory inside the Dockerfile
 
 	``` 
 	docker run --init -it --rm \
