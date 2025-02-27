@@ -7,9 +7,8 @@ Lars Vilhuber, the AEA data editor, has made available a set of Docker images fo
 
 Lars's instructions are more comprehensive (and didn't work for me, I'm sure it's my fault),  I am posting a quick solution reference that works for me, with a plan to fix it later. It goes like this:
 
-1. Figure out where your Stata license file is. Just google if you have no idea. Copy it into your working directory
-2. The following assumes your do files are in a subdirectory of the current working directory called my_project_do_files
-2. Use this Dockerfile. The part stata18-se-i:2024-12-18 can and should be changed according to your license and preferences. The full list of images:tabs is available [here](https://hub.docker.com/u/dataeditors)
+1. Figure out where your Stata license file is. Just google if you have no idea. Copy it into your working directory.
+2. Use this Dockerfile. The part stata18-se-i:2024-12-18 can and should be changed according to your license and preferences. The full list of images:tags is available [here](https://hub.docker.com/u/dataeditors)
 
 	```
 	FROM dataeditors/stata18-se-i:2024-12-18
@@ -24,7 +23,7 @@ Lars's instructions are more comprehensive (and didn't work for me, I'm sure it'
 	docker build -t stataimg .
 	``` 
 
-3. Run the following to open up an interactive stata interface. 
+3. Run the following to open up an interactive stata interface. The -v part assumes your do files are in a subdirectory of the current working directory called my_project_do_files. That's where output/dta files/etc... will be saved. If you want a more complex structure, make sure its root is mounted to /project, which is defined as the working directory inside the Dockerfile
 
 	``` 
 	docker run --init -it --rm \
