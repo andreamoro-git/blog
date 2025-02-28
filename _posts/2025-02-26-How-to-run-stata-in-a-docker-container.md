@@ -7,10 +7,10 @@ Lars Vilhuber, the AEA data editor, has made available a set of Docker images fo
 
 Lars's instructions are more comprehensive (and didn't work for me, I'm sure it's my fault),  I am posting a quick solution reference that worked for me on my IMac with OS Sequoia 15.3. I assume you have Docker installed, and you are somewhat familiar with opening a terminal in your computer and typing into it, navigating directories, etc... (but not a lot more really). 
 
-[This github project](https://github.com/andreamoro-git/docker_stata) recreates a minimal setup, but please read a full explanation below.  
+[This github project](https://github.com/andreamoro-git/docker_stata) recreates a minimal setup, but please read the full explanation below.  
 
-1. Figure out where your Stata license file is. Just google if you have no idea. Copy it into your working directory.
-2. If you don't need to install any packages, or intend to do it inside your do files, just type this from the root of your project. The part ```stata18-se:2024-12-18``` can and should be changed according to your license and preferences. The full list of images:tags is available [at the dataeditors docker hub](https://hub.docker.com/u/dataeditors)
+1. Figure out where your Stata license file is. Just google if you have no idea. Copy it into your working directory , or to some other accessible location of the filesystem, and modify the command below accordingly (NOTE: make sure you don't inadvertently distribute the license if you send your files e.g. to a replicator or coauthor. See also point #3 below.)
+2. *If* you don't need to install any packages, or intend to do it inside your do files, just type this command from the root of your project. The part ```stata18-se:2024-12-18``` can and should be changed according to your license and preferences. The full list of images:tags is available [at the dataeditors docker hub](https://hub.docker.com/u/dataeditors)
 
 	``` 
 	docker run --init -it --rm \
@@ -20,14 +20,15 @@ Lars's instructions are more comprehensive (and didn't work for me, I'm sure it'
 				dataeditors/stata18-se:2024-12-18
 	```
 		
-2. If you want to install packages inside your image, you need some more work. First, copy your license file into the directory where the Dockerfile will be saved. I usually have an "Environment" directory for it. Inside it, create a setup.do file that installs them. E.g. ```ssc install regdhfe``` etc... 
-3. Create a Dockerfile with the following content (with filename: Dockerfile, no extension). Most of it shoudl be self-explanatory. Note that you cannot place your license and setup.do files elsewhere. They must be in the same directory as the Dockerfile. You can avoid copying the stata.lic file but then you'll have to mount it upon container execution as in the previous step. 
+2. If you want to install packages inside your image, you need some more work. First, copy your license file into the directory where the Dockerfile will be saved. I usually have an "Environment" directory for it. Inside it, create a setup.do file with the commands you would type in stata to install all packages. E.g. ```ssc install regdhfe``` etc... 
+3. Create a Dockerfile with the following content (with filename: Dockerfile, no extension). Most of it should be self-explanatory. Note that you cannot place your license and setup.do files elsewhere. They must be in the same directory as the Dockerfile. You can avoid copying the stata.lic file but then you'll have to mount it upon container execution as in the previous step. 
 *This is something you should do if you intend to distribute the image, otherwise your license will be open to the world*
 
 	```
 	FROM dataeditors/stata18-se:2024-12-18
 
-	#copy the stata license
+	# copy the stata license *if you want to use the image only locally*
+	# otherwise, if you plan to distribute the image,  comment the line below and mount the license as in the previous command
 	COPY stata.lic /usr/local/stata/stata.lic 
 	USER statauser:stata
 	ENV PATH "$PATH:/usr/local/stata" 
