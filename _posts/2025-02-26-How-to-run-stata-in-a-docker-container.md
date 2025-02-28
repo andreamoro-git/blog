@@ -19,7 +19,8 @@ It goes like this:
 	```
 		
 2. If you want to install packages inside your image, you need some more work. First, copy your license file into the directory where the Dockerfile will be saved. I usually have an "Environment" directory for it. Inside it, create a setup.do file that installs them. E.g. ```ssc install regdhfe``` etc... 
-3. Create a Dockerfile with the following content (with filename: Dockerfile, no extension). Most of it shoudl be self-explanatory. Note that you cannot place your license and setup.do files elsewhere. They must be in the same directory as the Dockerfile. You can avoid copying the stata.lic file but then you'll have to mount it upon container execution as in the previous step. This may be something you want to do if you intend to distribute the image. 
+3. Create a Dockerfile with the following content (with filename: Dockerfile, no extension). Most of it shoudl be self-explanatory. Note that you cannot place your license and setup.do files elsewhere. They must be in the same directory as the Dockerfile. You can avoid copying the stata.lic file but then you'll have to mount it upon container execution as in the previous step. 
+*This is something you should do if you intend to distribute the image, otherwise your license will be open to the world*
 
 	```
 	FROM dataeditors/stata18-se:2024-12-18
