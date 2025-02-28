@@ -14,8 +14,10 @@ It goes like this:
 
 	``` 
 	docker run --init -it --rm \
-			--mount "type=bind,source=${PWD}/stata.lic,target=/usr/local/stata/stata.lic" \
-				-v "${PWD}/my_project_do_files":/project dataeditors/stata18-se:2024-12-18
+			   --mount "type=bind,source=${PWD}/stata.lic, \
+			            target=/usr/local/stata/stata.lic" \
+				-v "${PWD}/my_project_do_files":/project   \ 
+				dataeditors/stata18-se:2024-12-18
 	```
 		
 2. If you want to install packages inside your image, you need some more work. First, copy your license file into the directory where the Dockerfile will be saved. I usually have an "Environment" directory for it. Inside it, create a setup.do file that installs them. E.g. ```ssc install regdhfe``` etc... 
