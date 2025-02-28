@@ -7,7 +7,7 @@ Lars Vilhuber, the AEA data editor, has made available a set of Docker images fo
 
 Lars's instructions are more comprehensive (and didn't work for me, I'm sure it's my fault),  I am posting a quick solution reference that worked for me on my IMac with OS Sequoia 15.3. I assume you have Docker installed, and you are somewhat familiar with opening a terminal in your computer and typing into it, navigating directories, etc... (but not a lot more really). 
 
-[This github project](https://github.com/andreamoro-git/docker_stata) recreates a minimal setup, but please read the full explanation below.  
+You can clone [this github project](https://github.com/andreamoro-git/docker_stata) to recreate a minimal setup, but please read the full explanation below.  
 
 1. Figure out where your Stata license file is. Just google if you have no idea. Copy it into your working directory , or to some other accessible location of the filesystem, and modify the command below accordingly (NOTE: make sure you don't inadvertently distribute the license if you send your files e.g. to a replicator or coauthor. See also point #4 below.)
 2. *If* you don't need to install any packages, or intend to do it inside your do files, just type this command from the root of your project. The part ```stata18-se:2024-12-18``` can and should be changed according to your license and preferences. The full list of images:tags is available [at the dataeditors docker hub](https://hub.docker.com/u/dataeditors)
