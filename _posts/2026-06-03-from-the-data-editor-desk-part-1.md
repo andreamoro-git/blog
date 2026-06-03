@@ -7,7 +7,7 @@ tags: data-editor
 
 Recently I received a replication package that produced a figure much like the one below.
 
-![Manuscript vs. replication scatter plot, nearly identical]({{ site.url }}/assets/images/two_charts.png)
+![Manuscript vs. replication scatter plot, nearly identical]({{ site.url }}/blog/assets/images/two_charts.png)
 
 A quick disclaimer: this is **not** the actual figure. I had Claude draw a stand-in with random data so I'm not revealing anyone's work. But the substance is exactly the same. Manuscript on the left, replication on the right. Nearly identical.
 

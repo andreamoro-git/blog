@@ -20,7 +20,7 @@
   #share-buttons > div.share > svg {height: 17px; margin-top: 9px;}
 </style>
 
-{% assign shareurl = site.url | append: page.url %}
+{% assign shareurl = page.url | absolute_url %}
 {% assign safeurl = shareurl | url_encode %}
 {% assign safetitle = page.title | url_encode %}
 {% assign safetitlepre = "[Blog] " | append: page.author | append: " - " | url_encode %}
