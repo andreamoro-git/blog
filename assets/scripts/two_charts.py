@@ -6,6 +6,10 @@ x = np.arange(1, 102)                       # x = 1 ... 101
 base = np.sin(2 * np.pi * x / 50.0)          # underlying sinusoid (period 50)
 y = base + rng.normal(0, 0.15, size=x.size)  # scatter around the sinusoid
 
+# nudge the last point (x=101) close to the value at x=100, so the
+# manuscript-vs-replication difference is a subtle, easy-to-miss one
+y[-1] = y[-2] + 0.04
+
 fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
 # left: Manuscript -> only 100 points (published figure drops the last one)
