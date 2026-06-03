@@ -40,5 +40,3 @@ But that difficulty is the whole point. Replication failures are very often buil
 If I start drawing the line at "eh, close enough," I have to defend where that line sits — and there's no principled place to put it. So the rule is simpler and more defensible: the package should reproduce the paper. Full stop.
 
 And that, dear authors, is why people are sometimes annoyed at their data editors. :)
-
-*Next time: a case where the "minor detail" turned out not to be so minor.*
