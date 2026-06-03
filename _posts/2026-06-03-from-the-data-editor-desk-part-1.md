@@ -21,7 +21,7 @@ I sent the package back and asked the author to do one of two things: either cor
 
 The author was puzzled, and maybe a little annoyed. (They were, in fact, very nice about it — I may be projecting.) We exchanged a few emails.
 
-## "But this is a trivial difference!"
+## "But this is a trivial difference that does not change the message of the paper!"
 
 This is the natural reaction, and it's a fair one. The two panels clearly convey the same message. Same shape, same story. Who cares about one dot at the edge?
 
